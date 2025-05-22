@@ -8,6 +8,18 @@
 
 * Add IOU compatibility
 
+## Usage
+
+```
+docker run \
+    --rm -d \
+    --name gns3 \
+    --net=host --privileged \
+    -e BRIDGE_ADDRESS="172.21.1.1/24" \
+    -v <data path>:/data \
+    joepasss/gns3-server:latest
+```
+
 ## Parameters
 
 * `-v /data` - Path to persistant data
