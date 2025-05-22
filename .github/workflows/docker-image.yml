@@ -17,7 +17,7 @@ jobs:
 
     - name: set environment variables
       run: |
-        echo "DATE=$(date +%Y%m%d)" >> $GITHUB_ENV
+        echo "DATE_TAG=$(date +%Y%m%d)" >> $GITHUB_ENV
         echo "REPO=gns3-server" >> $GITHUB_ENV
         echo "USER=joepasss" >> $GITHUB_ENV
     
