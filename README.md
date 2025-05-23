@@ -80,4 +80,4 @@ You can disable the phone home feature with something like:
 ## TODO
 * add iourc generator
 * dependencies version control
-
+* optimize docker image
