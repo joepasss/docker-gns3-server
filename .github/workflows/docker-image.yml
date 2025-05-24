@@ -17,7 +17,7 @@ jobs:
 
     - name: set environment variables
       run: |
-        echo "VERSION=$(sed -e s/gns-server==//g requirements.txt)" >> $GITHUB_ENV
+        echo "VERSION=$(sed -e s/gns3-server==//g requirements.txt)" >> $GITHUB_ENV
         echo "REPO=gns3-server" >> $GITHUB_ENV
         echo "USER=joepasss" >> $GITHUB_ENV
     
