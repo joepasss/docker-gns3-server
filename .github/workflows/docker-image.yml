@@ -17,7 +17,7 @@ jobs:
 
     - name: set environment variables
       run: |
-        echo "DATE_TAG=$(date +%Y%m%d)" >> $GITHUB_ENV
+        echo "VERSION=$(sed -e s/gns-server==//g requirements.txt)" >> $GITHUB_ENV
         echo "REPO=gns3-server" >> $GITHUB_ENV
         echo "USER=joepasss" >> $GITHUB_ENV
     
@@ -38,8 +38,8 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
+          ${{ env.USER }}/${{ env.REPO }}:${{ env.VERSION }}
           ${{ env.USER }}/${{ env.REPO }}:latest
-          ${{ env.USER }}/${{ env.REPO }}:${{ env.DATE_TAG }}
 
     - name: Update Docker Hub Readme
       uses: peter-evans/dockerhub-description@v4.0.2
