@@ -2,7 +2,9 @@
 # jsimonetti/gns3-server
 [![](https://images.microbadger.com/badges/version/jsimonetti/gns3-server.svg)](https://microbadger.com/images/jsimonetti/gns3-server "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/jsimonetti/gns3-server.svg)](https://microbadger.com/images/jsimonetti/gns3-server "Get your own image badge on microbadger.com")[![](https://img.shields.io/docker/pulls/jsimonetti/gns3-server.svg)]()[![](https://img.shields.io/docker/stars/jsimonetti/gns3-server.svg)]()
 
-[jsimonetti/gns3-server](https://github.com/jsimonetti/docker-gns3-server)
+[jsimonetti/gns3-server(github)](https://github.com/jsimonetti/docker-gns3-server)
+
+[jsimonetti/gns3-server(dockerhub)](https://hub.docker.com/r/jsimonetti/gns3-server)
 
 <br/>
 
@@ -69,6 +71,7 @@ You can disable the phone home feature with something like:
 
 ## GNS3 gui
 [GNS3/gns3-gui](https://github.com/GNS3/gns3-gui)
+
 [GNS3/gns3-gui releases](https://github.com/GNS3/gns3-gui/releases)
 
 <br/>
@@ -79,5 +82,4 @@ You can disable the phone home feature with something like:
 
 ## TODO
 * add iourc generator
-* dependencies version control
 * optimize docker image
