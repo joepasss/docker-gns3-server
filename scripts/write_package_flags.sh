@@ -33,9 +33,9 @@ fi
 echo "USE=\"multilib\"" | tee -a /etc/portage/make.conf
 
 if grep -q '^MAKEOPTS=' /etc/portage/make.conf; then
-  sed -i 's/^MAKEOPTS=.*/MAKEOPTS="-j1"/' /etc/portage/make.conf
+  sed -i 's/^MAKEOPTS=.*/MAKEOPTS="-j2"/' /etc/portage/make.conf
 else
-  echo "MAKEOPTS=\"-j1\"" | tee -a /etc/portage/make.conf
+  echo "MAKEOPTS=\"-j2\"" | tee -a /etc/portage/make.conf
 fi
 
 # use flag
